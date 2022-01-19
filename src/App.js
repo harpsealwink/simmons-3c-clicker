@@ -18,7 +18,7 @@ import message from "./message.png";
 
 
 function App() {
-  const [harpSeals, setHarpSeals] = useState(10000);
+  const [harpSeals, setHarpSeals] = useState(0);
   const [clickerValue, setClickerValue] = useState(1);
   const [tinySeals, setTinySeals] = useState([]); 
 
