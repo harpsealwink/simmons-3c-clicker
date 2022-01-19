@@ -1,0 +1,26 @@
+@keyframes slidein {
+  from {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+}
+
+.TinySeal-image {
+  width: calc(40px + 1vmin);
+  height: calc(27px + 1vmin);
+  position: absolute;
+  top: 40vh;
+  left: 59vw;
+  animation-duration: 0.5s;
+  animation-name: slidein;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../public/harpseal.png");
+}

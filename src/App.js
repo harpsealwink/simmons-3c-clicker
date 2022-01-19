@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ReactHover, { Trigger, Hover } from 'react-hover'
+
 import './App.css';
 import ShopItem from "./ShopItem.js";
 import ClickerItem from "./ClickerItem";
 import Popup from './Popup';
+import TinySeal from "./TinySeal";
 
 import thonk from "./thonk.png";
 import graceok from "./graceok.png";
@@ -18,10 +20,14 @@ import message from "./message.png";
 function App() {
   const [harpSeals, setHarpSeals] = useState(10000);
   const [clickerValue, setClickerValue] = useState(1);
+  const [tinySeals, setTinySeals] = useState([]); 
 
   // increase harp seals by clicking
   const increaseHarpSeals = () => {
     setHarpSeals(parseInt(harpSeals) + clickerValue);
+    setTinySeals(tinySeals.concat(<TinySeal/>)); // new tiny seal pops up
+    setTimeout(() => {setTinySeals(tinySeals.slice(1))}, 500); // remove tiny seal after half a second
+    console.log(tinySeals)
   };
   // increase harp seals without clicking (when shop items are bought)
   const incrementSeals = (time, cost) => {
@@ -49,12 +55,12 @@ function App() {
     followCursor: true,
     shiftX: 65,
     shiftY: -42,
- };
- const HoverOptions2 = {
-  followCursor: true,
-  shiftX: -275,
-  shiftY: -42,
-};
+  };
+  const HoverOptions2 = {
+    followCursor: true,
+    shiftX: -275,
+    shiftY: -42,
+  };
 
 
   return (
@@ -134,11 +140,11 @@ function App() {
           <div className="App-harpSeals noselect">harp seals: {harpSeals}</div>
           <div 
           className="App-mainImage" 
-          onClick={() => {
-            increaseHarpSeals();
-          }}/> 
+          onClick={() => {increaseHarpSeals();}}/> 
         </div>
         <div className="placeholder"></div>
+        {/* {isOpen && <TinySeal/>} */}
+        {tinySeals}
       </div>
 
       <div className="App-rightColumn">
@@ -201,7 +207,7 @@ function App() {
            <Hover type="hover">
                <Popup popupInfo="This time-honored artifact of the 
                Simmons 3C lounge is here to stay. Forever. In the 
-               meantime, it'll generate 100 seals per second out of 
+               meantime, it generates 100 seals per second out of 
                pure epicness."/>
            </Hover>
        </ReactHover>
