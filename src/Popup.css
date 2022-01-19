@@ -1,0 +1,21 @@
+.Popup-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 6px;
+
+  width: 205px;
+  height: auto;
+  background-color: #261c2c;
+  opacity: 85%;
+  border-radius: 10px;
+}
+
+.Popup-text {
+  font-size: 20px;
+  color: white;
+  line-height: 80%;
+}

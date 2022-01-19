@@ -1,0 +1,36 @@
+.ShopItem-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+
+  width: 220px;
+  height: 90px;
+  background-color: #413c69;
+  border-radius: 10px;
+  color: white;
+}
+
+.ShopItem-image {
+  width: calc(50px + 1vmin);
+  height: auto;
+  padding: 16px;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ShopItem-textContainer {
+  padding-bottom: 2px;
+}
+
+.ShopItem-itemName {
+  font-size: calc(19px + 1vmin);
+  line-height: 95%;
+}
+
+.ShopItem-description {
+  font-size: 16px;
+  line-height: 80%;
+}

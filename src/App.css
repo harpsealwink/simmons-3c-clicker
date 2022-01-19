@@ -1,0 +1,94 @@
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.App {
+  background-color: #a7c5eb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.App-leftColumn {
+  display: flex;
+  width: 33vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+}
+
+.App-middleColumn {
+  display: flex;
+  width: 34vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+}
+
+.App-mainRect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 480px;
+  height: 430px;
+  background-color: #413c69;
+  border-radius: 40px;
+  padding-bottom: 12px;
+}
+
+.App-title {
+  font-family: "Concert One", cursive;
+  font-size: 36px;
+  color: #413c69;
+
+  padding-bottom: 9vh;
+}
+
+.App-harpSeals {
+  font-size: 33px;
+  padding-bottom: 30px;
+}
+
+.App-mainImage {
+  width: calc(400px + 1vmin);
+  height: calc(270px + 1vmin);
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../public/harpseal.png");
+}
+
+.placeholder {
+  height: 2vh;
+}
+
+.App-rightColumn {
+  display: flex;
+  width: 35vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-shopTitle {
+  font-size: 24px;
+  font-family: "Concert One", cursive;
+  padding-bottom: 5px;
+  color: #413c69;
+}
+
+.App-shopItem {
+  padding: 5px;
+}
