@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactHover, { Trigger, Hover } from 'react-hover'
 
 import './App.css';
@@ -18,9 +18,10 @@ import message from "./message.png";
 
 
 function App() {
-  const [harpSeals, setHarpSeals] = useState(0);
+  const [harpSeals, setHarpSeals] = useState(100000);
   const [clickerValue, setClickerValue] = useState(1);
   const [tinySeals, setTinySeals] = useState([]); 
+  const [incRate, setIncRate] = useState(0);
 
   // increase harp seals by clicking
   const increaseHarpSeals = () => {
@@ -30,13 +31,13 @@ function App() {
     console.log(tinySeals)
   };
   // increase harp seals without clicking (when shop items are bought)
+  let interval;
   const incrementSeals = (time, cost) => {
     // check if enough seals are owned to purchase item
     if ((parseInt(harpSeals) - cost) >= 0) {
       setHarpSeals(parseInt(harpSeals) - cost);
-      setInterval(() => {
-        setHarpSeals(harpSeals => parseInt(harpSeals) + 1)
-      }, 1000/time);
+      // set the increase rate
+      setIncRate(incRate + time);
     }
     else {
       // window.alert("You do not possess enough harp seals to purchase this item!");
@@ -49,6 +50,13 @@ function App() {
       setClickerValue(clickerValue+inc);
     }
   };
+
+  // change harp seal increase rate when incRate changes
+  useEffect(() => {
+      interval = setInterval(() => {
+        setHarpSeals(harpSeals => harpSeals + (incRate/100))
+      }, 10);
+  }, [incRate]); 
 
   // set hovering options for shop items
   const HoverOptions = {
@@ -137,7 +145,7 @@ function App() {
           Simmons 3C Clicker
         </div>
         <div className="App-mainRect">
-          <div className="App-harpSeals noselect">harp seals: {harpSeals}</div>
+          <div className="App-harpSeals noselect">harp seals: {parseInt(harpSeals)}</div>
           <div 
           className="App-mainImage" 
           onClick={() => {increaseHarpSeals();}}/> 

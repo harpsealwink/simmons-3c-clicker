@@ -10,8 +10,7 @@ function ShopItem(props) {
         // check if enough seals are owned to purchase item
         if ((parseInt(props.harpSeals) - parseInt(props.itemCost)) >= 0) {
             setNumOwned(numOwned + 1);
-            console.log(numOwned)
-        }
+        };
     };
 
   return (
