@@ -52,9 +52,11 @@ function App() {
 
   // change harp seal increase rate when incRate changes
   useEffect(() => {
-      interval = setInterval(() => {
-        setHarpSeals(harpSeals => harpSeals + (incRate/100))
-      }, 10);
+    const interval = setInterval(() => {
+      console.log('This will run every second!');
+      setHarpSeals(harpSeals => harpSeals + (incRate/100))
+    }, 10);
+    return () => clearInterval(interval);
   }, [incRate]); 
 
   // set hovering options for shop items
