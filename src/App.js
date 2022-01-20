@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ReactHover, { Trigger, Hover } from 'react-hover'
 
 import './App.css';
