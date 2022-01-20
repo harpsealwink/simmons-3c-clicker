@@ -31,7 +31,6 @@ function App() {
     console.log(tinySeals)
   };
   // increase harp seals without clicking (when shop items are bought)
-  let interval;
   const incrementSeals = (time, cost) => {
     // check if enough seals are owned to purchase item
     if ((parseInt(harpSeals) - cost) >= 0) {
