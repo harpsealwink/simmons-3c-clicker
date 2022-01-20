@@ -18,7 +18,7 @@ import message from "./message.png";
 
 
 function App() {
-  const [harpSeals, setHarpSeals] = useState(100000);
+  const [harpSeals, setHarpSeals] = useState(0);
   const [clickerValue, setClickerValue] = useState(1);
   const [tinySeals, setTinySeals] = useState([]); 
   const [incRate, setIncRate] = useState(0);
@@ -70,6 +70,7 @@ function App() {
     shiftY: -42,
   };
 
+  
 
   return (
     <div className="App">
