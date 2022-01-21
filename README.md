@@ -8,3 +8,7 @@ Like any other friend group, we have inside jokes, inside memes, funny moments, 
 call them. This clicker game (inspired by games like Cookie Clicker) honors those epic moments.
 
 Have fun :).
+
+https://harpsealclicker.vercel.app/ https://simmons-3c-clicker.vercel.app/ (two links link to the same thing)
+You might have to reload the page a few times to get the game
+to display correctly; I'm not quite sure why this is the case.
