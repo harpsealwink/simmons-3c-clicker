@@ -7,14 +7,14 @@ import ClickerItem from "./ClickerItem";
 import Popup from './Popup';
 import TinySeal from "./TinySeal";
 
-import thonk from "./thonk.png";
-import graceok from "./graceok.png";
-import gymmons from "./gymmons.JPG";
-import gingerbread from "./gingerbread.png";
-import snacks from "./snacks.png";
-import bears from "./bears.png";
-import hangseal from "./hangseal.png";
-import message from "./message.png";
+import thonk from "./assets/thonk.png";
+import graceok from "./assets/graceok.png";
+import gymmons from "./assets/gymmons.JPG";
+import gingerbread from "./assets/gingerbread.png";
+import snacks from "./assets/snacks.png";
+import bears from "./assets/bears.png";
+import hangseal from "./assets/hangseal.png";
+import message from "./assets/message.png";
 
 
 function App() {

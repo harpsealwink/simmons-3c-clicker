@@ -9,7 +9,7 @@ call them. This clicker game (inspired by games like Cookie Clicker) honors thos
 
 Have fun :).
 
-##### links to the game (two links link to the same thing)
+###### links to the game (two links link to the same thing)
 
 https://harpsealclicker.vercel.app/
 https://simmons-3c-clicker.vercel.app/
