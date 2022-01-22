@@ -182,8 +182,8 @@ body {
   }
   .App-title {
     font-size: 32px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 6vh;
+    padding-bottom: 5vh;
   }
   .App-harpSeals {
     font-size: 28px;
@@ -219,5 +219,8 @@ body {
   .App-mainImage {
     width: calc(225px + 1vmin);
     height: calc(152px + 1vmin);
+  }
+  .App-title {
+    font-size: 28px;
   }
 }

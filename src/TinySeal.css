@@ -24,3 +24,10 @@
   background-repeat: no-repeat;
   background-image: url("../public/harpseal.png");
 }
+
+@media (max-width: 400px) {
+  .TinySeal-image {
+    top: 22vh;
+    left: 67vw;
+  }
+}
