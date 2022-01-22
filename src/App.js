@@ -74,7 +74,7 @@ function App() {
   
 
   return (
-    <div className="App">
+    <div className="App noselect">
       <div className="App-leftColumn"> 
       <div className="App-shopTitle"> clicker shop </div>
         <div className="App-shopItem">
