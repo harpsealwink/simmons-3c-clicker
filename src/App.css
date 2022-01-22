@@ -25,6 +25,7 @@ body {
   justify-content: center;
   font-size: calc(10px + 1vmin);
   color: white;
+  order: 1;
 }
 
 .App-middleColumn {
@@ -35,6 +36,7 @@ body {
   justify-content: center;
   font-size: calc(10px + 1vmin);
   color: white;
+  order: 2;
 }
 
 .App-mainRect {
@@ -84,6 +86,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  order: 3;
 }
 
 .App-shopTitle {
@@ -167,6 +170,7 @@ body {
   }
   .App-middleColumn {
     width: min-content;
+    order: 1;
   }
   .App-leftColumn {
     width: min-content;
@@ -174,6 +178,7 @@ body {
   }
   .App-rightColumn {
     width: min-content;
+    order: 2;
   }
   .App-title {
     font-size: 32px;
