@@ -62,13 +62,13 @@ function App() {
   // set hovering options for shop items
   const HoverOptions = {
     followCursor: true,
-    shiftX: 65,
-    shiftY: -42,
+    shiftX: -103,
+    shiftY: 40,
   };
   const HoverOptions2 = {
     followCursor: true,
-    shiftX: -275,
-    shiftY: -42,
+    shiftX: -103,
+    shiftY: 40,
   };
 
   
